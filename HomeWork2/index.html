@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>homeWork2 </title>
+</head>
+<body>
+    <script>
+
+////////////////////// Ex 1 /////////////////////
+
+val = parseInt(prompt('Input a Number:'))
+
+ if (val < 0){
+    document.write(`${val} is Negative`)
+ }
+ else {
+    if (val == 0){
+        document.write(`${val} is zero`)
+    }
+    else{
+        document.write(`val is positive`)
+    }
+ }
+
+
+////////////////////// Ex 2 /////////////////////
+
+x = parseInt(prompt('Input #1 Number'))
+y = parseInt(prompt('Input #2 Number'))
+z = parseInt(prompt('Input #3 Number'))
+
+if (y > x || z > x){
+    document.write('Increasing')
+}
+
+
+////////////////////// Ex 3 /////////////////////
+
+x = parseInt(prompt('Input #1 Number'))
+y = parseInt(prompt('Input #2 Number'))
+z = parseInt(prompt('Input #3 Number'))
+
+if ( x > y && x > z){
+    document.write(`${x} is the biggest number`)
+}
+else{
+    if (z > x && z > y){
+        document.write(`${z} is the biggest number`)
+    }
+    else{
+        document.write(`${y} is the biggest number`)
+    }
+}  
+
+
+////////////////////// Ex 4  /////////////////////
+
+x = parseInt(prompt('input a number'))
+
+if (x >= 1 && x <= 9 ){
+document.write(`${x} is a 1 digit number`)
+}
+
+if (x >= 10 && x <= 99 ){
+document.write(`${x} is a 2 digit number`)
+}
+
+if (x >= 100 && x <= 999 ){
+document.write(`${x} is a 3 digit number`)
+}
+
+
+if (x >= 1000 && x <= 9999 ){
+document.write(`${x} is a 4 digit number`)
+}
+
+////////////////////// Ex 5  /////////////////////
+
+ x = parseInt(prompt(`How Much Is Your salary?`))
+
+
+ tax10 = (x * 0.10)
+if (x <= 23000 ){
+document.write(`your salary after taxes is ${x - tax10}`)
+}
+
+
+if (x >= 23000 && x <= 46000){
+firstTax =  23000 * 0.10 
+secondTax = (x - 23000) * 0.20
+document.write(`your salary after taxes is ${x - firstTax - secondTax}`)
+}
+
+
+
+if (x >= 46000 && x <= 120000 ){
+thirdTax = 46000 * 0.20 
+fourthTax = (x - 46000) * 0.30 
+document.write(`your salary after taxes is ${x - thirdTax - fourthTax}`)
+}
+
+
+if (x >= 120000 && x <= 220000 ){
+fifthTax = 120000 * 0.30 
+sixthTax = (x - 120000) * 0.40
+document.write(`your salary after taxes is ${x - fifthTax - sixthTax}`)
+}
+
+else {
+    seventhTax = x * 0.50
+    document.write(`your salary after taxes is ${x - seventhTax}`)
+}
+
+
+</script>
+</body>
+</html>
