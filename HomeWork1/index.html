@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<title>HomeWork1</title>
+
+</head>
+<body>
+
+
+
+
+
+<script>
+////////////////// Exercise 1 //////////////////
+
+x = parseInt(prompt('Input a Number #1'))
+y = parseInt(prompt('Input a Number #2'))
+
+if (y > x){
+document.write('Growing <br>')
+}
+
+////////////////// Exercise 2 //////////////////
+
+x = parseInt(prompt('Input a Number #1'))
+y = parseInt(prompt('Input a Number #2'))
+
+if (x > y){
+    document.write(`${x} <br>`)
+}
+else {
+    document.write(`${y} <br>`)
+}
+
+////////////////// Exercise 3 //////////////////
+
+x = parseInt(prompt('Input a Number #1'))
+
+if(x % 2 ==0){
+    document.write('even <br>')
+}
+
+else{
+    document.write('odd <br>')
+}
+
+////////////////// Exercise 4  //////////////////
+
+x = parseInt(prompt('Input a Number #1'))
+y = parseInt(prompt('Input a Number #2'))
+
+if (x > y){
+if(x % y ==0) {
+ document.write('No Remaining <br>')
+}
+else{
+document.write(`Remaining = ${x % y} <br>`) 
+}
+}
+
+document.write("<br>")
+if(y > x){
+if(y % x ==0){
+    document.write('No Remaining')
+}
+else{
+    document.write(`Remaining =  ${y % x}`)
+}
+}
+
+document.write("<br>")
+////////////////// Exercise 5  //////////////////
+
+
+x = parseInt(prompt('Input a Number #1'))
+y = parseInt(prompt('Input a Number #2'))
+
+if (x > y){
+document.write(`Smallest Number = ${y}`)
+}
+if (y > x){
+    document.write(`Smallest Number = ${x}`)
+}
+
+if(x == y){
+    document.write(`x &nbsp= ${x} <br>`)
+    document.write(`y &nbsp= ${y}`)
+}
+
+document.write("<br>")
+
+////////////////// Exercise 6 (Etgar) //////////////////
+
+t = parseInt(prompt('Write Down Your Current Salary:'))
+add = (t*10)/100
+NS = add + t
+
+
+if (NS > 6000){
+add = add/2 
+document.write(`Your New Salary &nbsp =  ${t + add} <br>`)
+}
+
+else{
+    document.write(`Your New Salary &nbsp =  ${NS}`)
+}
+document.write("<br>")
+
+
+
+</script>
+</body>
+</html>
